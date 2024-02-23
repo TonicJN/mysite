@@ -34,7 +34,7 @@ main {
   display: flex;
 }
 
-img {
+.play {
   opacity: 0;
   animation: gradation 3s forwards;
   width: 100%;
@@ -91,6 +91,10 @@ a {
 li:hover {
   background-color: brown;
   color: white;
+}
+
+.sns {
+  text-align: center;
 }
 
 /* footer */
