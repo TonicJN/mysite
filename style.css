@@ -93,9 +93,13 @@ li:hover {
   color: white;
 }
 
+address {
+  padding-top: 40px;
+}
+
 .sns {
   text-align: center;
-  padding-top: 48px;
+
 }
 
 /* footer */
@@ -170,5 +174,9 @@ h4:hover {
    }
   .next {
     display: none;
+  }
+
+  .sns {
+    padding-top: 40px;
   }
 }
