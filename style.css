@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+}
+
+/* header */
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  border-bottom: solid black 2px;
+
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 32px 0;
+}
+
+h2 {
+  margin: 0;
+  text-align: right;
+  font-weight: lighter;
+
+}
+
+/* main */
+
+main {
+  display: flex;
+}
+
+img {
+  opacity: 0;
+  animation: gradation 3s forwards;
+  width: 100%;
+  height: auto;
+  
+}
+
+
+.pic {
+  flex: 1;
+}
+
+.menu {
+  flex: 1;
+}
+
+ul { 
+  list-style: none;
+  margin: 0;
+  padding: 8px 16px 0 0;
+  transform: translate(700px);
+  animation: move 1s forwards 2s;
+
+}
+
+li {
+  font-size: 18px;
+  border: black solid 2px;
+  padding: 2px 8px;
+  text-align: center;
+  display: block;
+  width: 96px;
+}
+
+li + li {
+  margin-top: 40px;
+}
+
+.menu {
+  margin:auto;
+  
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li:hover {
+  background-color: brown;
+  color: white;
+}
+
+/* footer */
+
+footer {
+  border-top: 1px solid gray;
+  margin: 0;
+  padding-top: 32px;
+  /* margin-bottom: 16px; */
+  text-align: center;
+
+}
+
+
+@keyframes gradation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: .2;
+  }
+
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(700px);
+  }
+
+  100% {
+    transform: translate(100px);
+  }
+}
+
+/* prfpg */
+
+h3 {
+  font-size: 18px;
+  border: black solid 2px;
+  padding: 2px 8px;
+  text-align: center;
+  display: block;
+  width: 96px;
+  display: inline-block;
+}
+
+h4 {
+  display: inline-block;
+  border: 2px black solid;
+  padding: 0 4px;
+
+}
+
+h4:hover {
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+
+.prfpg {
+  background-image: .2 url(演奏写真＿淵ぼかし.jpg);
+  /* opacity: .2; */
+}
