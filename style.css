@@ -47,13 +47,15 @@ img {
 
 .menu {
   flex: 1;
+
 }
 
 ul { 
   list-style: none;
   margin: 0;
-  padding: 8px 16px 0 0;
-  transform: translate(700px);
+  padding: 0;
+  /* padding: 8px 16px 0 0; */
+  transform: translateX(700px);
   animation: move 1s forwards 2s;
 
 }
@@ -73,6 +75,9 @@ li + li {
 
 .menu {
   margin:auto;
+  /* margin-left: 24px; */
+  display: inline-block;
+  text-align: center;
   
 }
 
@@ -90,7 +95,7 @@ li:hover {
 
 footer {
   border-top: 1px solid gray;
-  margin: 0;
+  margin: 32px 0;
   padding-top: 32px;
   /* margin-bottom: 16px; */
   text-align: center;
@@ -115,7 +120,7 @@ footer {
   }
 
   100% {
-    transform: translate(100px);
+    transform: none;
   }
 }
 
@@ -135,6 +140,7 @@ h4 {
   display: inline-block;
   border: 2px black solid;
   padding: 0 4px;
+  font-weight: lighter;
 
 }
 
@@ -147,4 +153,12 @@ h4:hover {
 .prfpg {
   background-image: .2 url(演奏写真＿淵ぼかし.jpg);
   /* opacity: .2; */
+}
+
+
+@media (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
 }
